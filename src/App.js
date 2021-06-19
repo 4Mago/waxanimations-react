@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Cont>
+      <Text></Text>
+      <div class="vp-preview vp-preview-cover" data-thumb="https://i.vimeocdn.com/video/514264128?mw=960&amp;mh=540" data-thumb-width="960" style={{backgroundmage: url(&quot;https://i.vimeocdn.com/video/1064760365?mw=960&amp;mh=540&quot;);}}></div>
+    </Cont>
+  )
 }
 
-export default App;
+export default App
+
+
+const Cont = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 2%;
+
+`
+
+const Text = styled.p`
+
+`
