@@ -35,7 +35,6 @@ const App = () => {
       </Center>
       <Right>
         <Socials>
-          <Title>Socials</Title>
         <A href="https://www.instagram.com/waxanimations/" target="_blank"><img alt="" src="/IG-logo.svg"></img></A>
         <A href="https://www.linkedin.com/in/alexander-waxin-07a914201" target="_blank">
         <SVG2 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><Path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></SVG2>
@@ -104,6 +103,10 @@ const Text = styled.p`
   width: 100%;
   padding-bottom: 5px;
   margin-bottom: 5px;
+  
+  @media screen and (max-width: 500px) {
+    padding-left: 10px;
+  }
 `
 const Text2 = styled.p`
   color: white;
@@ -114,6 +117,10 @@ const Text2 = styled.p`
 const Iframe = styled.iframe`
 width: 100%; 
 height: 100%;
+
+@media screen and (max-width: 500px) {
+  
+}
 
 `
 const IframeCont = styled.div`
@@ -143,6 +150,10 @@ const Left = styled.div`
   flex-flow: column;
   justify-content: space-between;
   width: 33.33%;
+
+  @media screen and (max-width: 500px) {
+    width: 49.5%;
+  }
 `
 
 const Center = styled.div`
@@ -152,6 +163,10 @@ const Center = styled.div`
   width: 33.33%;
   text-align: center;
   align-items: center;
+
+  @media screen and (max-width: 500px) {
+    width:1%;
+  }
 `
 
 const Right = styled.div`
@@ -159,6 +174,11 @@ const Right = styled.div`
   flex-flow: column;
   justify-content: space-between;
   width: 33.33%;
+
+
+  @media screen and (max-width: 500px) {
+    width: 49.5%;
+  }
 `
 
 const RightCont = styled.div`
@@ -170,6 +190,13 @@ const RightCont = styled.div`
   flex-flow: column;
   justify-content: center;
   height: 255px;
+
+  @media screen and (max-width: 600px) {
+    height: 280px;
+    width: auto;
+    padding: 20px 5px;
+    overflow: hidden;
+  }
 `
 
 const NMBRS = styled.h1`
