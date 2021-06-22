@@ -175,7 +175,6 @@ const Right = styled.div`
   height: 180px;
   width: 100%;
 
-
   @media screen and (max-width: 500px) {
     min-width: 120px;
   }
