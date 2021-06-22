@@ -9,7 +9,22 @@ const App = () => {
     </IframeCont>
     <Overlay>
       <Left>
-      <Title></Title>
+        <Title></Title>
+      <Socials>
+        <A href="https://www.instagram.com/waxanimations/" target="_blank"><img alt="" src="/IG-logo.svg"></img></A>
+        <A href="https://www.linkedin.com/in/alexander-waxin-07a914201" target="_blank">
+        <SVG2 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><Path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></SVG2>
+        </A>
+        </Socials>
+      </Left>
+      <Center>
+        <A href="">
+        <Title2>
+          Waxanimations
+        </Title2>
+        </A>
+      </Center>
+      <Right>
       <Text>
         <NMBRS>
         <Title>Current Employment</Title>
@@ -25,22 +40,6 @@ const App = () => {
                 <p>A Creative Studio</p>
                 <p>Specialised in Esport &amp; Gaming.</p>
       </Text>
-      </Left>
-      <Center>
-        <A href="">
-        <Title2>
-          Waxanimations
-        </Title2>
-        </A>
-      </Center>
-      <Right>
-        <Socials>
-        <A href="https://www.instagram.com/waxanimations/" target="_blank"><img alt="" src="/IG-logo.svg"></img></A>
-        <A href="https://www.linkedin.com/in/alexander-waxin-07a914201" target="_blank">
-        <SVG2 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><Path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></SVG2>
-        </A>
-        </Socials>
-
         <RightCont>
           <Title>Contacts</Title>
         <A href="tel:46735392530" target="_blank"><Text2>+46735392530</Text2></A>
@@ -100,12 +99,13 @@ const Text = styled.p`
   font-weight: 700;
   padding: 15px;
   text-decoration: none;
-  width: 100%;
+  width: 70%;
   padding-bottom: 5px;
   margin-bottom: 5px;
   
   @media screen and (max-width: 500px) {
     padding-left: 10px;
+    min-width: 100px;
   }
 `
 const Text2 = styled.p`
@@ -143,41 +143,44 @@ const Overlay = styled.div`
   margin: 0;
   padding: 0;
   display: flex;
+  flex-flow: column;
 `
 
 const Left = styled.div`
   display: flex;
-  flex-flow: column;
   justify-content: space-between;
-  width: 33.33%;
+  height: 33.33%;
+  
+  width: 100%;
 
   @media screen and (max-width: 500px) {
-    width: 49.5%;
   }
 `
 
 const Center = styled.div`
   display: flex;
-  flex-flow: column;
   justify-content: center;
-  width: 33.33%;
+  height: 33.33%;
   text-align: center;
   align-items: center;
+  width: 100%;
 
   @media screen and (max-width: 500px) {
-    width:1%;
   }
 `
 
 const Right = styled.div`
   display: flex;
-  flex-flow: column;
   justify-content: space-between;
-  width: 33.33%;
+  height: 180px;
+  width: 100%;
 
 
   @media screen and (max-width: 500px) {
-    width: 49.5%;
+    min-width: 120px;
+  }
+  @media screen and (max-width: 350px) {
+    flex-flow: column;
   }
 `
 
@@ -185,17 +188,23 @@ const RightCont = styled.div`
   text-align: right;
   box-sizing: border-box;
   padding-left: 35px;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  height: 255px;
+  justify-content: flex-start;
+  margin: 15.5px;
+  margin-right: 2px;
+
 
   @media screen and (max-width: 600px) {
-    height: 280px;
-    width: auto;
-    padding: 20px 5px;
-    overflow: hidden;
+    text-align: right;
+    padding: 15px 5px;
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  @media screen and (max-width: 350px) {
+    background-color: #6d6d6d;
+    margin: 0;
   }
 `
 
