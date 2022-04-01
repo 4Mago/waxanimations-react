@@ -78,6 +78,7 @@ const Blackbox = styled.div`
     }
     100%{
         display: none;
+        background-color: transparent;
     }
 
 `
