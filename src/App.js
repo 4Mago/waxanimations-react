@@ -65,8 +65,8 @@ const Cont = styled.div`
 `
 
 const Blackbox = styled.div`
-  background-color: transparent; ;
-  animation: invis 2.5s linear;
+  animation-name: invis;
+  animation-delay: 2.5s;
   width: 100%;
   height: 60px;
   position:absolute;
@@ -74,11 +74,10 @@ const Blackbox = styled.div`
 
   @keyframes invis {
     0%{
-        display: block;
+      background-color: black;
     }
     100%{
-        display: none;
-        background-color: black;
+        background-color: transparent;
     }
 
 `
