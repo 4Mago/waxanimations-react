@@ -5,7 +5,7 @@ const App = () => {
   return (
     <Cont>
       <IframeCont>
-        <Iframe frameBorder="0" allow="autoplay" data-ready="true" data-vimeo-initialized="true" data-desktop="514264128" data-mobile="514264128" muted="" src="https://player.vimeo.com/video/694042990?h=fa29485693autoplay=1&amp;loop=1&amp;controls=0&amp;muted=1?&amp;background=1"></Iframe>
+        <Iframe frameBorder="0" allow="autoplay" data-ready="true" data-vimeo-initialized="true" data-desktop="514264128" data-mobile="514264128" muted="" src="https://player.vimeo.com/video/694042990?h=fa29485693&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;muted=1?&amp;background=1"></Iframe>
       </IframeCont>
       <Overlay>
         <Left>
