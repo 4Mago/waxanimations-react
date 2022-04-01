@@ -65,7 +65,7 @@ const Cont = styled.div`
 `
 
 const Blackbox = styled.div`
-  background-color: black; ;
+  background-color: transparent; ;
   animation: invis 2.5s linear;
   width: 100%;
   height: 60px;
@@ -78,7 +78,7 @@ const Blackbox = styled.div`
     }
     100%{
         display: none;
-        background-color: transparent;
+        background-color: black;
     }
 
 `
