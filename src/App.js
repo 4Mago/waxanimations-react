@@ -46,6 +46,7 @@ const App = () => {
             <A href="mailto: alexander@nmbrs.studio" target="_blank"><Text2>alexander@nmbrs.studio</Text2></A>
           </RightCont>
         </Right>
+        <Blackbox></Blackbox>
       </Overlay>
     </Cont>
   )
@@ -61,6 +62,22 @@ const Cont = styled.div`
   justify-content: space-between;
   box-sizing: border-box;
   background-color: black;
+`
+
+const Blackbox = styled.div`
+  background-color: black; ;
+  animation: invis 2.5s linear;
+  width: 100%;
+  height: 60px;
+
+  @keyframes invis {
+    0%{
+        display: block;
+    }
+    100%{
+        display: none;
+    }
+
 `
 
 const Title = styled.p`
