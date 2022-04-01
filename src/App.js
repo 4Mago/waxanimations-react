@@ -69,6 +69,8 @@ const Blackbox = styled.div`
   animation: invis 2.5s linear;
   width: 100%;
   height: 60px;
+  position:absolute;
+  bottom: 0;
 
   @keyframes invis {
     0%{
