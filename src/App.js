@@ -77,7 +77,7 @@ const Blackbox = styled.div`
       background-color: black;
     }
     100%{
-        background-color: transparent;
+      background-color: white;
     }
 
 `
